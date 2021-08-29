@@ -1,10 +1,10 @@
 //? A Normal Function
-function addOne (numOne, numTwo) {
-
+function addNum (numOne, numTwo) {
+ 
 }
 
 //! A Constructor Function (ES5 - the old way)
-// The difference : We have to make the first character of the function's name to uppercase.
+// The difference : The first character of the constructor function's name should be uppercase.
 function Person (name, age, city, hobby) {
     this.name = name;
     this.age = age;
@@ -32,6 +32,7 @@ class Person1 {
      }
 }
 
-
+// We can't see methods which are defined outside the field(constructor), but we can call them.
 const person2 = new Person1("Thomas", 45 ,"Berlin", "fishing")
 console.log(person2);
+console.log(person2.addOne);

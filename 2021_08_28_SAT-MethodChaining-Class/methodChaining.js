@@ -1,3 +1,4 @@
+// An Array that we are going to use with loops
 const people = [
 	{
 		name: "John",
@@ -31,10 +32,14 @@ const people = [
 	},
 ];
 
-// console.log(people[0].name);
-// console.log(people[4].name);
-// console.log(people[people.length-1].name);
+//? How can we get the value of specific elements' key
+// console.log(people[0].name); //the value of a key property in the first element
+// console.log(people[4].name); //the value of a key property in the last element
+// console.log(people[people.length-1].name);  // Another way: How to get the value of a key property in the last element. 
+// array[array.length -1]: It is a common way to get the last element of an array in the case of unknowing the last element's index.
 
+
+//! To get all name properties' values from all elements of array and put them into an new array.
 //? For Loop
 
 const forLoop = (array) => {
@@ -85,6 +90,7 @@ const forOf = (array) => {
 }
 // console.log(forOf(people));
 
+//* Advanced array methods (All advanced array methods need a call-back function as an argument)
 //? forEach method
 
 const forEach = (array) => {
@@ -113,24 +119,29 @@ const filter1 = people.filter((el)=> el.name.length>=5 )
 console.log(filter1);
 
 
+//! To get only names in new array who lives in Berlin using the method chaining.
+
 const getNamesInCity = people.filter((el)=> el.city === "Berlin").map((el)=>el.name
 )
-// [{},{},{}].
 console.log(getNamesInCity);
 
 
+//! To get names whose hobby are a gardening.
 const getNamesIncludeGardening = people.filter((el)=> el.hobby.includes("gardening")).map((el)=>el.name)
 console.log(getNamesIncludeGardening);
 
 
+//* Destructuring ver. for the previous one.
 {
     const getNamesIncludeGardening = people.filter(({hobby})=> hobby.includes("gardening")).map(({name})=>name)
 console.log(getNamesIncludeGardening);
 }
 
+//! To get only names in new array who lives in Berlin using the method chaining and sort the result in alphabet order.
 const sortedGetNamesInCity = people.filter((el)=> el.city === "Berlin").map((el)=>el.name).sort()
 console.log(sortedGetNamesInCity);
 
+//* Another way to sort the result in alphabet order. (using localeCompare)
 const numbers = ["Banana","Apple","Orange","Pear"]
 const sortedNumbers = numbers.sort((a,b)=> b.localeCompare(a))
 console.log(sortedNumbers);
