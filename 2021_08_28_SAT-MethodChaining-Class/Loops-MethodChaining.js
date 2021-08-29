@@ -147,5 +147,5 @@ console.log(sortedGetNamesInCity);
 
 //* Another way to sort the result in alphabet order. (using localeCompare)
 const numbers = ["Banana", "Apple", "Orange", "Pear"];
-const sortedNumbers = numbers.sort((a, b) => b.localeCompare(a));
+const sortedNumbers = numbers.sort((a, b) => a.localeCompare(b));
 console.log(sortedNumbers);
