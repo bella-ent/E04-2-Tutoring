@@ -58,10 +58,11 @@ class calculate {
 console.log(calculate.pi);
 console.log(calculate.e);
 calculate.elevate(2, 3);
-// const x = prompt("enter your x: ");
-// const y = prompt("enter your y: ");
-// console.log(calculate.percentage(x, y));
-
+const x = prompt("enter your x: ");
+const y = prompt("enter your y: ");
+console.log(calculate.percentage(x, y));
+console.log(calculate.subtract(x, y));
+console.log(calculate.multiply(x, y));
 // const x = prompt("enter your x: ");
 // const y = prompt("enter your y: ");
 // const width = prompt("enter your width: ");

@@ -15,27 +15,27 @@ class Pokemon {
 		console.log(`magic: ${this.magic}`);
 		console.log(`---------------------`);
 	}
+
+	//! What we have to consider:
+	//? If the pokemon has its magic points and health points and the competitor has its health points, the pokemon can attack using its skill.
+	//? If the competitor or the pokemon has no health points or the pokemon has no magic points, the pokemon can not attack anymore.
 	attack(index, competitor) {
-		if (this.magic > 0 && this.health > 0) {
+		if (this.magic > 0 && this.health > 0 && competitor.health > 0) {
 			this.magic -= this.skills[index].magicAmount;
 			console.log(
 				`${this.name} launched skill '${this.skills[index].attackName}' successfully!`
 			);
-		}
-		if (competitor.health <= 0) {
-			console.log(`${competitor.name} is killed!`);
-		} else if (competitor.health > 0 && this.health > 0) {
 			competitor.health -= this.skills[index].damageAmount;
 			console.log(
 				`${competitor.name} got ${this.skills[index].damageAmount} damage`
 			);
 		}
-
-		if (this.health <= 0) {
+		if (competitor.health <= 0) {
+			console.log(`${competitor.name} is killed!`);
+		} else if (this.health <= 0) {
 			console.log(`${this.name} is already dead!`);
-		}
-		if (this.magic <= 0) {
-			console.log(`${this.name} dosen't have enough magic, so cannot attack!`);
+		} else if (this.magic <= 0) {
+			console.log(`${this.name} doesn't have enough magic, so cannot attack!`);
 		}
 	}
 	getMagic() {
@@ -61,7 +61,13 @@ pikachu.learnAttackSkill(electricShock);
 bulbasaur.showStatus();
 pikachu.attack(0, bulbasaur);
 bulbasaur.showStatus();
+pikachu.attack(0, bulbasaur);
+pikachu.attack(0, bulbasaur);
+pikachu.attack(0, bulbasaur);
 pikachu.showStatus();
 pikachu.getMagic();
 pikachu.showStatus();
+pikachu.attack(0, bulbasaur);
+pikachu.attack(0, bulbasaur);
+pikachu.attack(0, bulbasaur);
 console.log(pikachu);
