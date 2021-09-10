@@ -22,13 +22,17 @@ class BullsAndCows {
 				}
 			});
 		});
-		console.log(`Hint: ${bulls} bull(s) ${cows} cow(s)`);
+		if (bulls === 4) {
+			console.log(`Correct!`);
+		} else {
+			console.log(`Hint: ${bulls} bull(s) ${cows} cow(s)`);
+		}
 	}
 }
 const prompt = require("prompt-sync")({ sigint: true });
-let secretNumber = prompt("[For Player1]: What is your secret number?: ");
+let secretNumber = prompt("[For Player1]: What is your secret number?: ", {
+	echo: "*",
+});
 const player1SecretNum = new BullsAndCows(secretNumber);
-let player2TryNum = prompt(
-	"\n\n\n\n\n\n\n\n\n\n\n[For Player2] Guess! input the number:  "
-);
+let player2TryNum = prompt("[For Player2] Guess! input the number:  ");
 player1SecretNum.compare(player2TryNum);
