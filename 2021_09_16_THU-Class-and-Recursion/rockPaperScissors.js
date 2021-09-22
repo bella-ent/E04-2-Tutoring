@@ -29,55 +29,71 @@ class rockPaperScissors {
 				`Player: ${this.playerSelect} / computer: ${this.computerChoice}`
 			);
 			console.log(`You win!`);
-		} else {
+		}
+
+		//! 3. the case that the player loses.
+		else {
 			console.log(
 				`Player: ${this.playerSelect} / computer: ${this.computerChoice}`
 			);
 			console.log("You lose!");
 		}
-		//! 3. the case that the player loses.
 	}
 }
 const prompt = require("prompt-sync")({ sigint: true });
 
 //!First step : give a condition to prevent unexpected user input.
+// {
+// 	const playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
+// 	if (playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect)) {
+// 		console.log(`Please choose among 0, 1, 2`);
+// 	} else {
+// 		const play = new rockPaperScissors(playerSelect);
+// 		play.compare();
+// 	}
+// }
+
+//!Second step: make to continue the game using recursion.
+// {
+// 	function continueGame() {
+// 		const playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
+// 		if (playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect)) {
+// 			console.log(`Please choose among 0, 1, 2`);
+// 			const playerAgain = prompt("Do you want to play again: yes or no?");
+// 			if (playerAgain === "yes") continueGame();
+// 		} else {
+// 			const play = new rockPaperScissors(playerSelect);
+// 			play.compare();
+// 			if (play.playerSelect === play.computerChoice) {
+// 				const playerAgain = prompt("Do you want to play again: yes or no?");
+// 				if (playerAgain === "yes") continueGame();
+// 			}
+// 		}
+// 	}
+// }
+// continueGame();
+
+//! Challenge! : Using while loop to continue the game (Homework!;-))
 {
-	const playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
-	if (playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect)) {
+	let playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
+	let play = new rockPaperScissors(playerSelect);
+	while (playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect)) {
 		console.log(`Please choose among 0, 1, 2`);
+		compareAgain();
+		if (!(playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect))) {
+			break;
+		}
+	}
+	if (play.playerSelect === play.computerChoice) {
+		compareAgain();
 	} else {
 		const play = new rockPaperScissors(playerSelect);
 		play.compare();
 	}
-}
 
-//!Second step: make to continue the game using recursion.
-{
-	function continueGame() {
-		const playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
-		if (playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect)) {
-			console.log(`Please choose among 0, 1, 2`);
-			const playerAgain = prompt("Do you want to play again: yes or no?");
-			if (playerAgain === "yes") continueGame();
-		} else {
-			const play = new rockPaperScissors(playerSelect);
-			play.compare();
-			if (play.playerSelect === play.computerChoice) {
-				const playerAgain = prompt("Do you want to play again: yes or no?");
-				if (playerAgain === "yes") continueGame();
-			}
-		}
+	function compareAgain() {
+		playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
+		play = new rockPaperScissors(playerSelect);
+		play.compare();
 	}
-}
-continueGame();
-
-//! Challenge! : Using while loop to continue the game (Homework!;-))
-{
-	// while (!play.selectArray.includes(playerSelect)) {
-	// 	switch (playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect)) {
-	// 	}
-	// 	play.compare();
-	// }
-	// const player1 = new rockPaperScissors(0);
-	// player1.compare();
 }

@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	text-align: center;
+}
+
+.nav-list {
+	background-color: #072f5f;
+	height: 3rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	color: white;
+}
+
+.h2 {
+	text-align: center;
+}
+
+.info img {
+	height: 12rem;
+	width: 18rem;
+}
+
+.price {
+	height: 7rem;
+	width: 7rem;
+	border: 5px solid #072f5f;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	padding-bottom: 1.5rem;
+	margin: 1rem;
+}
+
+.info-package {
+	border-bottom: 2px solid #072f5f;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.footer {
+	border-bottom: 1px solid grey;
+	padding-bottom: 1rem;
+	height: 10rem;
+	background-color: #072f5f;
+}
+
+.prices {
+	margin-bottom: 1rem;
+}
+
+.links,
+.prices,
+.info,
+.site-map {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.links,
+.site-map {
+	height: 50%;
+	list-style: none;
+	color: white;
+}
+
+.links a {
+	color: white;
+}
+
+.borderYellow {
+	border-bottom: 2px solid yellow;
+}
+
+.borderOrange {
+	border-bottom: 2px solid orange;
+}
+
+.borderRed {
+	border-bottom: 2px solid red;
+}
+
+.borderGray {
+	border-bottom: 5px solid grey;
+}
+
+.imgBorder {
+	border: 2px solid #072f5f;
+}
