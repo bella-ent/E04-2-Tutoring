@@ -74,26 +74,3 @@ const prompt = require("prompt-sync")({ sigint: true });
 // continueGame();
 
 //! Challenge! : Using while loop to continue the game (Homework!;-))
-{
-	let playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
-	let play = new rockPaperScissors(playerSelect);
-	while (playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect)) {
-		console.log(`Please choose among 0, 1, 2`);
-		compareAgain();
-		if (!(playerSelect > 2 || playerSelect < 0 || isNaN(playerSelect))) {
-			break;
-		}
-	}
-	if (play.playerSelect === play.computerChoice) {
-		compareAgain();
-	} else {
-		const play = new rockPaperScissors(playerSelect);
-		play.compare();
-	}
-
-	function compareAgain() {
-		playerSelect = prompt("Choose: [0. rock / 1.paper / 2.scissor]: ");
-		play = new rockPaperScissors(playerSelect);
-		play.compare();
-	}
-}
