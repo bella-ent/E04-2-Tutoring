@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Profile</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<form>
+			<fieldset>
+				<legend>Put your details here!</legend>
+
+				<label>Put your name here</label>
+				<input id="name" type="text" />
+
+				<label>Put your birthday here</label>
+				<input id="birthday" type="date" />
+
+				<label>Upload a photo of yours</label>
+				<input id="photo" type="file" /><br />
+
+				<label>Pick your favorite color</label>
+				<input id="primaryColor" type="color" /><br />
+
+				<label>Pick your secondary color</label>
+				<input id="secondaryColor" type="color" /><br />
+
+				<textarea
+					id="comment"
+					placeholder="Write a paragraph about yourself"
+					maxlength="140"
+				></textarea>
+				<p class="countermessage">Type all you need in 140 characters</p>
+
+				<label>Pick your Skills: </label><br />
+
+				<li><input class="skills" type="checkbox" />JavaScript</li>
+				<li><input class="skills" type="checkbox" />Ruby</li>
+				<li><input class="skills" type="checkbox" />Python</li>
+				<li><input class="skills" type="checkbox" />Java</li>
+				<li><input class="skills" type="checkbox" />PHP</li>
+			</fieldset>
+		</form>
+		<div>
+			<button id="btnCV">Create CV</button>
+			<button id="resetForm" type="reset">Reset Form</button>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>
