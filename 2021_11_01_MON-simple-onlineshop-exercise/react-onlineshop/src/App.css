@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	text-align: center;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	background-color: #000000;
+	color:#ffffff;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	position: fixed;
+}
+
+.item-container {
+	padding: 7rem 2rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item-card {
+	width: 15rem;
+	padding: 1rem;
+}
+
+#cart {
+	width: 3rem;
+}
+#item-img {
+	width: 10rem;
+}
+
+.show {
+	width: 20rem;
+	height: 100vh;
+	border: 1px solid black;
+	position: fixed;
+	top: 5rem;
+	right: 0;
+	background-color: #ccc;
+}
+
+.hide {
+	display: none;
+}
