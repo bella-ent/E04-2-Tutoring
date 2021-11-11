@@ -3,9 +3,9 @@ import Test from "./components/Test";
 import { useState } from "react";
 
 function App() {
-	const [test, setTest] = useState("hi");
+	const [greeting, setGreeting] = useState("hi");
 
-	// let greeting = "Hi!";
+	// let greeting = "Hi";
 	// let fruit = "orange";
 	// const person = {
 	// 	name: "Anass",
@@ -19,8 +19,16 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>{test}</h1>
-			<Test test={test} setTest={setTest} />
+			<h1
+				onClick={(e) => {
+					setGreeting("Hallo");
+				}}
+			>
+				{greeting}
+			</h1>
+			<Test greeting={greeting} />
+			{/* <Test test={test} setTest={setTest} /> */}
+			{/* <Test greeting={greeting} /> */}
 		</div>
 	);
 }

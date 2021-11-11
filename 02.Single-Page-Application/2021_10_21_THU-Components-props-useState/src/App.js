@@ -5,6 +5,7 @@ import ToDoView from "./components/ToDoView";
 function App() {
 	//* useState make an array and there are two elements. (state, setState)
 	const [toDos, setToDos] = useState([]);
+
 	const removeToDo = (index) => {
 		setToDos(toDos.filter((item, idx) => index !== idx));
 	};

@@ -4,8 +4,10 @@ const array = [null, "bella", undefined, "lana", "tomas", "", "bob", 0];
 //TODO: How can I get items that contain actual values.
 const filteredArray = array.filter((el) => el);
 const oppositeArray = array.filter((el) => !el);
+const withoutBella = array.filter((el) => el !== "bella");
 console.log(filteredArray);
 console.log(oppositeArray);
+console.log(withoutBella);
 
 //TODO: How can I get items that has more than six letters.
 const fruits = ["banana", "pineapple", "apple", "orange", "tomato"];
