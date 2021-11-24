@@ -1,0 +1,186 @@
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 2.5rem;
+    
+    #net-logo {
+        color: red;
+        font-size: 3rem;
+        font-weight: 800;
+
+    }
+    
+    #languages {
+        padding: 0.5rem;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5px;
+        margin: 1rem 1rem;
+    }
+}
+.email {
+    // background-color: #000000;
+    padding: 5rem 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contents {
+        width: 40rem;
+        text-align: center;
+    }
+#email-des {
+    padding: 1rem 0 0 0.5rem;
+}
+button{
+    padding: 0.5rem;
+}
+}
+
+.bottom-email-con {
+    background-color: #000000;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.596);
+    height:46rem;
+    width: 100vw;
+
+
+    .background {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+
+  .start{
+    color: #ffffff;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .text-con{
+        width: 50%;
+    h1 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-weight: 400;
+    }
+    input {
+
+        padding: 1rem 1rem
+    }
+    button{
+        width: 9rem;
+    }
+    }
+}  
+} 
+
+.cards {
+    height: 28rem;
+    padding: 2rem;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+        flex-direction: row-reverse;
+    align-items: center;
+    border-top: 8px solid rgb(47, 47, 47);
+    .contents {        margin-left: 5rem;
+        width: 30rem;
+        h1{
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+        span{
+            font-size: 1.6rem;
+        }
+    }
+    img {
+        padding: 2rem;
+        width: 27rem;
+        margin-left: 5rem;
+    }
+}
+
+.cards:nth-child(2n) {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq {
+    border-top: 8px solid rgb(47, 47, 47);
+    background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            padding: 4rem 1rem;
+            font-size: 3rem;
+        }
+}
+
+
+
+#accordion-con {
+    width: 50rem;
+    background-color: #000000;
+    #accordion-item{
+        margin-bottom: 1rem;
+    }
+    #dark-button button, #accordion-body, #accordion-item{
+        background: rgb(46, 46, 46);
+        color: #ffffff;
+    }
+    #dark-button button {
+        font-size: 1.7rem;
+    }
+    #accordion-body {
+        font-size: 1.4rem;
+    }
+}
+
+.footer-con {
+        border-top: 8px solid rgb(47, 47, 47);
+    padding: 3rem 0 0 2rem;
+    background-color: #000000;
+    color: rgb(165, 165, 165);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .call {
+        padding: 1.5rem;
+    }
+}
+.footer-ul {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-list {
+    width: 15rem;
+    padding: 0.5rem;
+}
+
+#languages-foot {
+    padding: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 1rem;
+    align-self: start;
+}
+
+#netflix {
+    align-self: start;
+}
