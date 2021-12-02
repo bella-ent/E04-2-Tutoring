@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.App {
+	text-align: center;
+}
+
+.main-con {
+	height: 90vh;
+	padding: 2rem;
+
+}
+
+.language {
+	background-color: #f5f5dc;
+	padding: 0.5rem
+}
+
+.first-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #cde6b9;
+}
+
+.first-page * {
+	margin-bottom: 1.5rem;
+
+	border-radius: 0.5rem;
+}
+
+.first-page button {
+	margin-left: 1rem;
+	background-color:#1c5342 ;
+	color: #ffffff;
+	
+}
+.user-input {
+	padding: 0.5rem
+}
+
+
+
+.hide {
+	display: none;
+
+}
+
+#coin {
+	width: 2rem;
+
+}
+
+.innerStore {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.coin-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#avatar {
+	width: 10rem;
+}
+.store-con {
+	width: 100vw;
+	background-color: #1c5342;
+	position: absolute;
+	bottom: 0;
+	color: #ffffff;
+	padding: 1rem 0;
+}
+
+.store-con h1 {
+	margin-bottom: 1rem;
+}
+
+.innerStore {
+	background-color: #ffffff;
+	color: black;
+	padding: 1rem;
+	display: none;
+}
+
+.showStore {
+	background-color: #ffffff;
+	color: black;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#randombox {
+	width: 6rem;
+	border-radius: 1rem;
+}
+
+.correctBGI {
+	background-image: url("https://i.pinimg.com/originals/3d/d6/fa/3dd6fa330c282afb03100dcba6c74cf9.gif");
+	background-position: center;
+	background-size: cover;
+	height: 90vh;
+	text-align: center;
+}
+
+.modes {
+	margin: 1rem;
+}
+
+.question-con {
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.question input {
+	width: 5rem;
+	padding: 0.4rem;
+	font-size: 1.4rem;
+	font-weight: 800;
+}
+
+
+.avatar-con {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem;
+}
+
+button {
+	background-color: #1c5342;
+	border: none;
+	margin-left: 1rem;
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+	color: #ffffff;
+	cursor: pointer;
+
+}
+
+button:hover {
+	background-color: cadetblue;
+}
+
+.comments {
+	border: 1px solid black;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin: 2rem 1rem;
+	min-width: 20rem;
+}
