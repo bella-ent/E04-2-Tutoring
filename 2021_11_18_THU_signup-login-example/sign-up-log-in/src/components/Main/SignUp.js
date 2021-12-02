@@ -40,6 +40,7 @@ function SignUp() {
 
 	//* window.localStorage.setItem("users", JSON.stringify(userData)); => saving data on localStorage
 	//* JSON.parse(window.localStorage.getItem("users")) => get data from localStorage
+	
 	return (
 		<Modal
 			size="lg"
