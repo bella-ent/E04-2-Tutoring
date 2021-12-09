@@ -1,0 +1,12 @@
+1. What is Node JS?
+In the beginning, JavaScript was created for giving more dynamic effects to Web sites on the browser. but, Some JavaScript developers wanted to use it on the server-side as well. So one brilliant developer called Ryan Dahl made it and now Node JS is the most popular language on the server-side. Above half of the backend developers use it.
+
+2. Why it is popular?
+Because of particular features of JavaScript.
+First, JavaScript is a synchronous programming language. So, it means if there are some codes that should be executed, they should execute in the cascading system. First in, first out. But imagine, if one of the functions takes one hour, then the next function wouldn't execute immediately and just wait for its cue.
+In other words, Let's imagine you're in the restaurant. But you have to wait for 1hr because the previous order isn't done and a waiter can't work until the order is done.
+It isn't efficient, right? So, Other languages, such as Java, make more waiters for customers. It is called multi-threading but JavaScript doesn't work in that way.
+In order to overcome this Synchronous system, In the case of NodeJS, it takes a customer's order and passes the order to the kitchen and goes to another customer and so on and so on.
+How can it do this way? Using Asynchronous execution.
+If there are some functions that take some time, and then JavaScript pass them to Web API like a separated waiting room and then work on the next functions, after they finished their works, and then throw the result.
+So it has less memory consumption because it doesn't need to make other threads and is faster than other languages. And if you learned already JavaScript for the front-end side, and no need to learn another language for the back-end side. That is why it is popular with developers.
